@@ -30,7 +30,7 @@ module.exports.signIn = function (req, res) {
   }
 
   return res.render("user_sign_in", {
-    title: "mediaTrend | Sign In",
+    title: "jobSearch | Sign In",
   });
 };
 
@@ -41,7 +41,7 @@ module.exports.signUp = function (req, res) {
   }
 
   return res.render("user_sign_up", {
-    title: "mediaTrend | Sign Up",
+    title: "jobSearch | Sign Up",
   });
 };
 

@@ -1,5 +1,33 @@
 <link rel="stylesheet" href="/css/home.css">
 
-<div>
-    <h1>Hi</h1>
+<div class="notification">
+    <% if(!locals.user) { %> 
+        Please Sign In for posting new jobs !!!
+    <%}%>
+</div>
+
+<div class="container">
+    
+    <div id="container__jobs">
+        <% for(job of jobs){ %> 
+                    
+            <div class="job">
+                <h3><%= job.rol %> </h3>
+                <div class="job__function">
+                    <span>Key Function: </span>
+                    <span class="brown_col"><%= job.function %></span>
+                </div>
+                <div class="job__function">
+                    <span>Key Skills Required: </span>
+                    <span class="brown_col"><%= job.skills %></span>
+                </div>
+                <div class="job__function">
+                    <span>Job Location: </span>
+                    <span class="brown_col"><%= job.location %></span>
+                </div>
+            </div>
+                    
+        <% } %> 
+          
+    </div>
 </div>

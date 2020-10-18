@@ -1,0 +1,35 @@
+.notification {
+    width: 600px;
+    margin: 10px auto;
+    font-size: 20px;
+    color: indianred;
+}
+
+.container{
+    width: 600px;
+    margin: 50px auto;
+    margin-bottom: 20px;
+
+    .job{
+        padding: 20px;
+        margin-bottom: 10px;
+        background-color: #f1f1f1;
+        border-radius: 10px;
+    }
+
+    .job h3{
+        text-align: center;
+        font-weight: 900;
+        font-size: 30px;
+        color: green;
+    }
+
+    .job .job__function{
+        margin: 8px;
+        font-size: 25px;
+
+        .brown_col{
+            color: #777;
+        }
+    }
+}
